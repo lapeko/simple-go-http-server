@@ -13,6 +13,6 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-platform
-  system: my-platform
-  providesApis:
-    - go-api
+  # system: my-platform
+  # providesApis:
+  #   - go-api
