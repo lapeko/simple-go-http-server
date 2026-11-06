@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: go-api
+  description: Simple Go REST API server
+  tags:
+    - go
+    - api
+    - backend
+  annotations:
+    github.com/project-slug: lapeko/simple-go-http-server
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-platform
+  system: my-platform
+  providesApis:
+    - go-api
