@@ -1,0 +1,43 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Simple counter HTTP API.",
+        "title": "Counter API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "paths": {
+        "/counter": {
+            "get": {
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "counter"
+                ],
+                "summary": "Get counter",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "counter"
+                ],
+                "summary": "Increment counter",
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        }
+    }
+}

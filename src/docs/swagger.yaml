@@ -1,0 +1,28 @@
+basePath: /
+host: localhost:3000
+info:
+  contact: {}
+  description: Simple counter HTTP API.
+  title: Counter API
+  version: "1.0"
+paths:
+  /counter:
+    get:
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: integer
+      summary: Get counter
+      tags:
+      - counter
+    post:
+      responses:
+        "204":
+          description: No Content
+      summary: Increment counter
+      tags:
+      - counter
+swagger: "2.0"
