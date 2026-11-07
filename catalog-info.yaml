@@ -13,6 +13,17 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-platform
-  # system: my-platform
-  # providesApis:
-  #   - go-api
+  providesApis:
+    - go-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: go-api
+  description: Counter REST API definition
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: team-platform
+  definition:
+    $text: ./src/docs/swagger.yaml
