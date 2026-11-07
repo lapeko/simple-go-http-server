@@ -1,0 +1,9 @@
+site_name: Counter Service Docs
+site_description: Documentation for Counter Service
+
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+
+plugins:
+  - techdocs-core
