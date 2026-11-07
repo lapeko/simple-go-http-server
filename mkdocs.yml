@@ -3,7 +3,7 @@ site_description: Documentation for Counter Service
 
 nav:
   - Overview: index.md
-  - Architecture: architecture.md
+  - Runbook: runbook.md
 
 plugins:
   - techdocs-core
